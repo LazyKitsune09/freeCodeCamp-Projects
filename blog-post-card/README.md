@@ -1,2 +1,2 @@
 # Blog Post Card
-Basic CSS lab project
+Basic HTML and CSS lab project
