@@ -1,4 +1,5 @@
 # Blog Post Card
+![Blog Post Card](screenshot.png)
 
 ## Lab Project
 A simple blog post card built with HTML and CSS.
