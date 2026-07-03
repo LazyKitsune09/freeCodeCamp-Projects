@@ -1,8 +1,47 @@
+body{
+  width: 75vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  min-height: calc(100vh - 100px);
+  }
+
 header{
-  font-family: "Protest Revolution", sanserif;
+  font-family: "Protest Revolution", sans-serif;
   color: darkolivegreen;
   text-align: center;
 }
+
+section{
+  width: 75%;
+}
+
+h2{
+  color: darkolivegreen;
+  font-family: Helvetica, sans-serif;
+  font-size: 30px;
+  font-weight: 500px;
+  padding: 0px 10px 0px 35px;
+  margin-bottom: 0px;
+  text-decoration: underline;
+}
+
+ul{
+  font-family: Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: saddlebrown;
+}
+
+li{
+  padding-bottom: 20px;
+  list-style-type: none;
+  list-style-position: inside;
+}
+
 
 .lets-rock{
   max-width: 100%;
@@ -24,9 +63,59 @@ header{
   margin-right: auto;
   margin-left: auto;
   padding: 10px;
-  font-family: Helvetica, san-serif;
+  font-family: Helvetica, sans-serif;
   font-size: 20px;
   font-weight: bold;
 
-  
+}
+
+.festival-highlights{
+  background: linen;
+  width: 40%;
+  margin: 20px;
+  vertical-align: top;
+  border-radius: 15px;
+  border: 5px solid chocolate;
+  display: inline-block; 
+}
+
+.event-details{
+  background: linen;
+  font-family: Helvetica; 
+  width: 40%;
+  margin-right: 20px;
+  vertical-align: top;
+  border-radius: 15px;
+  border: 5px solid chocolate;
+  display: inline-block;   
+}
+
+.festival-highlights a{
+  text-decoration: none;
+  margin: 15px 15px;
+  color: saddlebrown;
+  font-family: Helvetica;
+  font-weight: bold
+}
+
+.festival-highlights a:hover{
+  color: darkolivegreen;
+}
+
+.festival-highlights a:visited{
+  color: darkolivegreen;
+}
+
+.event-info{
+  font-family: Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: saddlebrown;
+  margin: 15px 15px;
+}
+
+.event-info disclaimer{
+  font-style: oblique;
+  font-weight: 400;
+
 }
