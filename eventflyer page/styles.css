@@ -1,1 +1,32 @@
+header{
+  font-family: "Protest Revolution", sanserif;
+  color: darkolivegreen;
+  text-align: center;
+}
 
+.lets-rock{
+  max-width: 100%;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2)
+}
+
+.hero{
+  font-size: 50px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.description{
+  background: chocolate;
+  color: linen;
+  border-radius: 15px;
+  max-width: 75%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 10px;
+  font-family: Helvetica, san-serif;
+  font-size: 20px;
+  font-weight: bold;
+
+  
+}
