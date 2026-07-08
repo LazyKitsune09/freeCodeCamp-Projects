@@ -19,6 +19,11 @@ section{
   width: 75%;
 }
 
+hr{
+  margin: 20px;
+  width: 90%
+}
+
 h2{
   color: darkolivegreen;
   font-family: Helvetica, sans-serif;
@@ -33,15 +38,12 @@ ul{
   font-family: Helvetica, sans-serif;
   font-size: 20px;
   font-weight: 600;
-  color: saddlebrown;
+  color: chocolate;
 }
 
 li{
   padding-bottom: 20px;
-  list-style-type: none;
-  list-style-position: inside;
 }
-
 
 .lets-rock{
   max-width: 100%;
@@ -72,50 +74,83 @@ li{
 .festival-highlights{
   background: linen;
   width: 40%;
-  margin: 20px;
-  vertical-align: top;
+  margin-left: 20px;
   border-radius: 15px;
   border: 5px solid chocolate;
   display: inline-block; 
 }
 
+.more-info{
+  display: block;
+  width: fit-content;
+  margin: auto;
+  text-decoration: none;
+  color: darkolivegreen;
+  font-size: 20px;
+  font-weight: 600;
+  padding-bottom: 40px;
+}
+
+.more-info:hover{
+  color: chocolate;
+}
+
+.more-info:visited{
+  color: purple;
+}
+
 .event-details{
   background: linen;
-  font-family: Helvetica; 
   width: 40%;
-  margin-right: 20px;
-  vertical-align: top;
+  margin-left: 20px;
   border-radius: 15px;
   border: 5px solid chocolate;
-  display: inline-block;   
-}
+  display: inline-block; 
+  vertical-align: top;
 
-.festival-highlights a{
-  text-decoration: none;
-  margin: 15px 15px;
-  color: saddlebrown;
-  font-family: Helvetica;
-  font-weight: bold
-}
-
-.festival-highlights a:hover{
-  color: darkolivegreen;
-}
-
-.festival-highlights a:visited{
-  color: darkolivegreen;
-}
-
-.event-info{
   font-family: Helvetica, sans-serif;
   font-size: 20px;
   font-weight: 600;
-  color: saddlebrown;
-  margin: 15px 15px;
+  padding: 15px;
+  color: chocolate;
 }
 
-.event-info disclaimer{
+.disclaimer{
   font-style: oblique;
-  font-weight: 400;
+  color: darkolivegreen;
+  padding-top: 10px;
 
+}
+
+.advertisement{
+  text-align: center;
+  font-size: 45px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+#booking{
+  background-color: chocolate;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+
+}
+
+footer{
+  text-align: center;
+}
+
+address{
+  display: inline-block;
+  font-size: 18px;
+  font-style: normal;
+}
+
+address a{
+  text-decoration: none;
+  font-style: normal;
 }
