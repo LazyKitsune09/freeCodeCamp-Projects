@@ -4,48 +4,47 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Job Application Form</title>
-    <link rel="stylesheet" href="styles. css" />
+    <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-    <h1>Job Application Page</h1>
     <div class="container">
+        <h1>Job Application Form</h1>
         <form>
             <label for="name">Full Name: </label>
-            <input 
-                id="name"
-                type="text"
-                required
-            />
-            
-            <label for="email">Email Address: </label>
-            <input 
-                id="email"
-                type="email"
-                required
-            />
+            <input id="name" type="text" required />
 
-            <label for="name">Position: </label>
-            <select id="position" name="availability" required>
-               <option id="graphic-designer" value="Graphic Designer">Graphic Designer</option> 
-                <option id="accountant" value="Accountant">Accountant</option> 
-               <option id="security-manager" value="Security Manager">Security Manager</option> 
-                
+            <label for="email">Email: </label>
+            <input id="email" type="email" required />
+
+            <label for="position">Position: </label>
+            <select id="position">
+                <option value="ux-designer">UX Designer</option>
+                <option value="software-developer">Software Developer</option>
+                <option value="cybersecurity-analyst">Cyber Security Analyst</option>
+                <option value="frontend-dev">FrontEnd Developer</option>
             </select>
-            
 
-            <fieldset class="radio-group" required>
-                <legend>Availability</legend>
-                <input type="radio" name="Time" checked >Part Time</input>
-                <input type="radio" name="Time" checked >Full Time</input>
+            <hr />
+
+            <fieldset class="radio-group">
+                <legend id="availability">Time Availability</legend>
+
+                <input id="part-time" name="availability" type="radio" checked required />
+                <label for="part-time">Part Time</label>
+
+                <input id="full-time" name="availability" type="radio" required />
+                <label for="full-time">Full Time</label>
             </fieldset>
 
-            <label for="motivation">Why do you want this job?</label>
-            <textarea id="message" name="motivation" rows="5" cols="20" required>Gimme this role because...</textarea>
+            <hr />
+
+            <label for="message">Why are you applying for this position?</label>
+            <textarea id="message">I am interested in this position because...</textarea>
 
             <button type="submit">Submit</button>
         </form>
-
+        
     </div>
 
 </body>
