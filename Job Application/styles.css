@@ -21,7 +21,7 @@ form{
   
 }
 
-label, legend{
+label:not(.part-time, .full-time), legend{
   font-weight: bold;
   display: block;
   margin: 5px;
@@ -45,6 +45,11 @@ button:hover{
   color: floralwhite;
 }
 
+input:focus, textarea:focus{
+  border-color: maroon;
+  outline: none;
+}
+
 input, select{
   background-color: floralwhite;
   height: 1.5rem;
@@ -53,25 +58,53 @@ input, select{
   border-radius: 5px;
 }
 
-input:valid{
+input:valid, select:valid, textarea:valid{
   border: 2px solid green;
 }
 
-input:invalid{
+input:invalid, select:invalid, textarea:invalid{
   border: 2px solid red;
 }
 
-input:focus{
-  border: none;
+input:first-of-type{
+  background-color: maroon;
+  color: white;
 }
 
-
+.radio-group input[type="radio"]{
+  display: inline-block;
+  vertical-align: bottom;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid grey;
+}
 
 .radio-group input[type="radio"]:checked{
-  color: maroon;
   border: 2px solid maroon; 
   background-color: floralwhite; 
-  
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2)  
+}
+
+.radio-group input[type="radio"]::before{
+  display: block;
+  content: " ";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 1.5px;
+  transform: translate(3px, 3px) scale(0);
+  transition: all 0.3s ease-in;
+}
+
+.radio-group input[type="radio"]:checked::before{
+  transform: translate(3px, 3px) scale(1);
+  background-color: maroon;
+}
+
+.radio-group input[type="radio"]:checked + label{
+  color: maroon;
 }
 
 #message{
@@ -79,8 +112,6 @@ input:focus{
   height: 70px;
   font-family: Arial;
   font-style: italic;
-  color: 
+  color: darkgrey; 
 
 }
-
-
